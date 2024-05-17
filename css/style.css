@@ -146,6 +146,12 @@ a{
     color: var(--linkColor);
     text-decoration: none;
     transition: 1s;
+    
+}
+.workLink{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
  #codecheck{
     margin-left: 0;
@@ -275,7 +281,7 @@ li img{
     }
     #portrait{
         margin: var(--centeredMargin);
-        width: 40vw;
+        width: 30vw;
     }
     li img{
         width:15vw;
