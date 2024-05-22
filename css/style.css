@@ -5,12 +5,18 @@
 
 :root{
 
-    --primeFontColor:#088486;
-    --linkColor:rgb(47,79,79);
-    --linkColorVisited:#025e33;
-    --responsiveFontSize:clamp(.8rem,1.7vw,2rem);
+    --primeFontColor:#e1ecec;
+    --linkColor:rgb(234, 248, 248);
+    --linkColorVisited:#dbf1e7;
+    --responsiveFontSize:clamp(.6rem,1.7vw,2rem);
     --centeredMargin:0 auto;
 }
+.cardimg{
+    width:100%;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+
 .contactSection{
     display: flex;
     flex-direction: column;
@@ -26,20 +32,24 @@ form .contactForm{
 body{
     display: flex;
     flex-direction: column;
-    font-size: clamp(.8rem,1.7vw,2rem);
+    font-size: clamp(.6rem,1.3vw,2rem);
     font-family: martian mono, sans-serif;
     line-height: normal;
     color: var(--primeFontColor);
     margin: 0;
     padding: 0;
     align-items: center;
+    background:linear-gradient(rgb(53, 52, 53),rgb(39, 39, 39));
     }
 
     label{
         margin: 40vw;
         text-align: center;
     }
-
+    p .cardinfo{
+        font-size: 0.6rem;
+        padding: 1%;
+    }
 @keyframes cloudGo{ 
     0%{
             transform:translate(0%,10%);
@@ -91,30 +101,41 @@ transition: 1s;
 }
 .works{
     display: grid;
-    gap: 5%;
+    gap: 3%;
     justify-content: center;
    
-    margin-left: 5%;
-    margin-right: 5%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
     }
 
 .workItem{
-    border: solid black;
+    border: solid rgb(255, 255, 255);
+    border-radius: 5px;
     text-align: center;
-    width:20vw;
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    background-color: rgba(245, 245, 245, 0.425);
+    backdrop-filter: blur(4px);
+    max-height: 80vh;
 }
+
 #portrait{
-    width:25vw;
-    min-width: 25vw;
+    width:20vw;
+    min-width: 20vw;
     border-radius: 50%;
     border: solid var(--primeFontColor);
+    margin-bottom: 10px;
+
 }
-button:hover{
-    opacity: 0.7;
+button:hover,.workItem:hover{
+    
     transform: scale(1.1);
-    transition: 1s;
+    transition: 2s;
     cursor: pointer;
+    z-index: 10;
     
 }
 nav{
@@ -148,10 +169,10 @@ a{
     transition: 1s;
     
 }
+
 .workLink{
     margin-top: 5px;
     margin-bottom: 5px;
-
 }
  #codecheck{
     margin-left: 0;
@@ -163,7 +184,7 @@ a:active{
     color: darkcyan;
 }
 a:hover{
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition: 1s;
     color:var(--linkColor);
 }
@@ -179,8 +200,8 @@ a:hover{
     text-align: center;
     margin-top: 3vh;
     margin-right: 15vw;
-   
 }
+
 
 main{
     display: flex;
@@ -188,9 +209,7 @@ main{
    width: fit-content;
    margin-left: 2%;
    margin-right: 2%;
-  
-   margin-bottom: 2%;
-    
+  margin-bottom: 2%;
 }
 
 li{
@@ -205,17 +224,13 @@ li{
 footer{
     width: 100%;
     margin: auto;
-     position:fixed;
+     
     bottom: .2vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: white;
-    padding-top: 2%;
-    
-    
-}
+   }
 
 #findme{
     width:fit-content;
