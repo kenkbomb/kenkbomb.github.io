@@ -8,7 +8,7 @@
     --primeFontColor:#e1ecec;
     --linkColor:rgb(234, 248, 248);
     --linkColorVisited:#dbf1e7;
-    --responsiveFontSize:clamp(.6rem,1.7vw,2rem);
+    --responsiveFontSize:clamp(1rem,1.7vw,2rem);
     --centeredMargin:0 auto;
 }
 .cardimg{
@@ -328,6 +328,9 @@ li img{
         grid-template-columns: 1fr 1fr;
        
     }
+    footer{
+        margin-top: 15vw;
+    }
     .workItem{
         margin-bottom: 5%;
         width:40vw;
@@ -343,11 +346,13 @@ li img{
     }
     .works{
         grid-template-columns: 1fr;
+        
     
     }
-    footer{
-        margin-top: 30%;
-    }
+   footer{
+    display: none;
+   }
+   
     .workItem{
         width: 80vw;
         height: 60vh;
