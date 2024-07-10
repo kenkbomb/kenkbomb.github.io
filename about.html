@@ -6,7 +6,7 @@
     <link rel = 'shortcut icon' href = 'http://wikipedia.com/static/favicon/wikipedia.ico'>
     <title>About Ken Bailey</title>
     <link rel = 'stylesheet' type="text/css" href = 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-    <link rel="stylesheet" href="css/style.production.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet">
@@ -15,8 +15,8 @@
 
     <header>
         <nav>
-        <!-- <h1 id = 'nameCap'>Ken Bailey</h1> -->
-        <img src = 'img/kenLogo.png' alt = 'logo pic'>
+         <h1 id = 'nameCap'>Ken Bailey</h1> 
+        <!--<img src = 'img/kenLogo.png' alt = 'logo pic'>-->
             <div class = 'links' role="menubar">
                 <a href = 'index.html' role="menuitem">Home</a>
                 <a href = 'about.html' role = 'menuitem'>About Me</a>
@@ -30,35 +30,48 @@
     <h1>About Me...</h1>
     
     <p>
-        Recent graduate of Full Stack Immersive program from <span class = 'greenSpan'>Career Foundry</span> and Front-End Development from McMaster University.  Can Dev, won't move. Likes things.
+        Recent graduate of Full Stack Immersive program from <span class = 'greenSpan'><a href="www.careerfoundry.com"> Career Foundry</a></span> and Front-End Development from McMaster University.  Web and game developer. Likes things.
     </p>
 
 
         <table>
             <thead>
-                <tr>
+                <tr style="text-decoration: underline;">
                     <td>Skills   </td>
-                    <td>Years of Experience   </td>
+                    <td >Years of Experience   </td>
                     <td>Level of Expertise   </td>
                     <!-- <td>educational background   </td> -->
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="text-transform: capitalize;">
                 <tr>
                     <td>HTML5</td>
                     <td>1</td>
-                    <td>junior dev</td>
+                    <td>junior developer</td>
                     <!-- <td>Career Foundry</td> -->
                 </tr>
                 <tr>
                     <td>CSS</td>
                     <td>1</td>
-                    <td>junior dev</td>
+                    <td>junior developer</td>
                 </tr>
                 <tr>
                     <td>JS</td>
                     <td>1</td>
                     <td>beginner</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>1</td>
+                    <td>junior developer</td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>1</td>
+                    <td>beginner</td>
+                </tr>
+                <tr>
+
                 </tr>
             </tbody>
         </table>
@@ -668,14 +681,19 @@
    
    
    <footer>
-    <p id = 'findme'>Find me on... </p>
+    
         <div class = 'socials'>
             
             <ul>
-                <li><img src = 'img/git.svg' width="25" alt = 'social media icon github'></li>
-                <li><img src = 'img/twitter.svg' width="25"  alt = 'social media icon twitter'></li>
-                <li><img src = 'img/link.svg' width="25" alt = 'social media icon linkedIN'></li>
-    
+                    <div style="background-color: whitesmoke;border-radius: 25px;padding: 5px;">
+                    <a href="" ><img src = 'img/git.svg' width="25" alt = 'social media icon github' ></a>
+                    </div>
+                    <div style="background-color: whitesmoke;border-radius: 25px;padding: 5px;">
+                    <a href=""><img src = 'img/twitter.svg' width="25"  alt = 'social media icon twitter'></a>
+                    </div>  
+                    <div style="background-color: whitesmoke;border-radius: 25px;padding: 5px;">
+                    <a href=""><img src = 'img/link.svg' width="25" alt = 'social media icon linkedIN'></a>
+                    </div>  
              </ul>
 
         </div>

@@ -6,7 +6,7 @@
     <link rel = 'shortcut icon' href = 'http://wikipedia.com/static/favicon/wikipedia.ico'>
     <title>Contact Ken Bailey</title>
     <link rel = 'stylesheet' type="text/css" href = 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-    <link rel="stylesheet" href="css/style.production.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet">
@@ -15,8 +15,8 @@
 <body>
     <header>
     <nav>
-        <!-- <h1 id = 'nameCap'>Ken Bailey</h1> -->
-        <img src = 'img/kenLogo.png' alt = 'logo pic'>
+         <h1 id = 'nameCap'>Ken Bailey</h1> 
+        
         <div class = 'links' role = 'menubar'>
             <a href = 'index.html' role="menuitem">Home</a>
             <a href = 'about.html' role="menuitem">About Me</a>
@@ -25,6 +25,7 @@
         </div>
     </nav>
     </header>
+
    <main class = 'contactSection'>
         <div class = 'contactInfo'>
             <p>
@@ -36,38 +37,27 @@
             </p>
         </div>
 
-        <form method="post" class= 'contactForm'>
-            <div class = 'contactItem'>
-            <label>Contact Info</label>
-            </div>
-            <br>
-            <div class = 'contactItem'>
-            <label for = 'name' class = 'contactFormLabel'>Name: </label><br>
-            </div>
-            <input id = 'name' required>
-            <br>
-            <label for = 'email' class = 'contactFormLabel'>Email Address</label>
-            <input id = 'email' type="email" required>
-            <br>
-            <label for = 'textarea' class="contactFormLabel">Message: </label>
-            <textarea id = 'textarea' maxlength="300"></textarea><br>
-            <button id = 'contactFormButton'>Confirm</button>
-
-        </form>
+        
    </main>
-   <footer>
-    <p id = 'findme'>Find me on </p>
-        <div class = 'socials'>
+
+    <footer>
+        <div class = 'socialsDrop'>
             
             <ul>
-                <li><img src = 'img/git.svg' width="25" alt = 'social media icon github'></li>
-                <li><img src = 'img/twitter.svg' width="25"  alt = 'social media icon twitter'></li>
-                <li><img src = 'img/link.svg' width="25" alt = 'social media icon linkedIN'></li>
+                    <div style="background-color: whitesmoke;border-radius: 25px;padding: 5px;">
+                    <a href="" ><img src = 'img/git.svg' width="25" alt = 'social media icon github' ></a>
+                    </div>
+                    <div style="background-color: whitesmoke;border-radius: 25px;padding: 5px;">
+                    <a href=""><img src = 'img/twitter.svg' width="25"  alt = 'social media icon twitter'></a>
+                    </div>  
+                    <div style="background-color: whitesmoke;border-radius: 25px;padding: 5px;">
+                    <a href=""><img src = 'img/link.svg' width="25" alt = 'social media icon linkedIN'></a>
+                    </div>  
         
             </ul>
         </div>
 
-   </footer>
+  </footer> 
    <script src="js/tota11y.min.js"></script>
 </body>
 </html>
